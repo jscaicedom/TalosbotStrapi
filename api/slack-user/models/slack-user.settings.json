@@ -21,6 +21,7 @@
       "type": "json"
     },
     "reports": {
+      "via": "slack_user",
       "collection": "reports"
     }
   }
