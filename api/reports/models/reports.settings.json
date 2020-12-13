@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "name": "Reports",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Today": {
+      "type": "text"
+    },
+    "Yesterday": {
+      "type": "text"
+    },
+    "Blockers": {
+      "type": "text"
+    },
+    "slack_user": {
+      "via": "report",
+      "model": "slack-user"
+    }
+  }
+}

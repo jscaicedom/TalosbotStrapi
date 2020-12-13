@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/slack-users",
+      "handler": "slack-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slack-users/count",
+      "handler": "slack-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slack-users/:id",
+      "handler": "slack-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slack-users/find/:slackid",
+      "handler": "slack-user.findSlackId",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/slack-users",
+      "handler": "slack-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/slack-users/:id",
+      "handler": "slack-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/slack-users/:id",
+      "handler": "slack-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

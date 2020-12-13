@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slack_users",
+  "info": {
+    "name": "Slack User",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "SlackID": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "conversationReference": {
+      "type": "json"
+    },
+    "report": {
+      "model": "reports",
+      "via": "slack_user"
+    },
+    "reports": {
+      "collection": "reports"
+    }
+  }
+}
