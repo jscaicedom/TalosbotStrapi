@@ -21,7 +21,6 @@
       "type": "text"
     },
     "slack_user": {
-      "via": "report",
       "model": "slack-user"
     }
   }

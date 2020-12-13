@@ -20,10 +20,6 @@
     "conversationReference": {
       "type": "json"
     },
-    "report": {
-      "model": "reports",
-      "via": "slack_user"
-    },
     "reports": {
       "collection": "reports"
     }
